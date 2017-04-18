@@ -74,7 +74,7 @@ else
 	Urts_Library_Name := sgx_urts
 endif
 
-App_Cpp_Files := App/Main.cpp App/Utils.cpp
+App_Cpp_Files := App/m_server.cpp App/Utils.cpp
 App_Include_Paths := -IApp -I$(SGX_SDK)/include -Iinclude
 
 App_C_Flags := $(SGX_COMMON_CFLAGS) -fPIC -Wno-attributes $(App_Include_Paths)
